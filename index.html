@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Splitter</title>
+
+</head>
+<body>
+
+<section class="back">
+  
+  <img src="images/logo.svg" class="logo">
+  
+  <section class="main-block">
+    <section class="settings-block">
+
+<div class="bill-block">
+  <label for="bill-input">Bill</label>
+  <input type="text" placeholder="0" id="bill-input" class="billInput">
+</div>
+
+<div class="tipSelectBlock">
+  <label class="tipSelectLabel">Select Tip %</label>
+  <div class="radio-block" style="display: none;">
+    <input type="radio" name="tips" id="0%Tip" class="tip-radios tip-0%" value="0" checked>
+  </div>
+  <div class="radio-block">
+    <input type="radio" name="tips" id="5%Tip" class="tip-radios tip-5%" value="5">
+    <label for="5%Tip" class="tipLabel tip-5%">5%</label>
+  </div>
+  <div class="radio-block">
+    <input type="radio" name="tips" id="10%Tip" class="tip-radios tip-10%" value="10">
+    <label for="10%Tip" class="tipLabel tip-10%">10%</label>
+  </div>
+  <div class="radio-block">
+    <input type="radio" name="tips" id="15%Tip" class="tip-radios tip-15%" value="15">
+    <label for="15%Tip" class="tipLabel tip-15%">15%</label>
+  </div>
+  <div class="radio-block">
+    <input type="radio" name="tips" id="25%Tip" class="tip-radios tip-25%" value="25">
+    <label for="25%Tip" class="tipLabel tip-25%">25%</label>
+  </div>
+  <div class="radio-block">
+    <input type="radio" name="tips" id="50%Tip" class="tip-radios tip-50%" value="50">
+    <label for="50%Tip" class="tipLabel tip-50%">50%</label>
+  </div>
+  <div class="radio-block">
+    <input type="text" name="tips" placeholder="Custom" class="tip-custom tip-custom-unselected">
+  </div>
+</div>
+
+<div class="peopleNum-block">
+  <label for="PeopleNum">Number of People</label>
+  <input type="text" placeholder="0" class="People-Num" maxlength="3" id="PeopleNum">
+</div>
+
+  </section>
+
+  <section class="result-block">
+
+<div class="tipResult-block infoBlock">
+  <h2 class="Result-title">Tip Amount</h2>
+  <p class="Result-desc">/ person</p>
+  <h2 class="tipResult result result-standart">$0.00</h2>
+</div>
+
+<div class="totalResult-block infoBlock">
+  <h2 class="Result-title">Total</h2>
+  <p class="Result-desc">/ person</p>
+  <h2 class="totalResult result result-standart">$0.00</h2>
+</div>
+
+<input type="button" value="Reset" class="resetButton">
+
+    </section>
+  </section>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

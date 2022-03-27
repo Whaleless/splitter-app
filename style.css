@@ -1,0 +1,250 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    margin-left: -43px;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.main-block {
+    width: 800px;
+    height: 400px;
+    padding: 30px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -435px;
+
+    background: white;
+    border-radius: 25px;
+
+    display: flex;
+    column-gap: 30px;
+
+    font-family: 'Space Mono', monospace;
+}
+
+.settings-block {
+    width: 50%;
+    margin-top: 10px;
+
+}
+
+.result-block {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+label {
+    font-size: 14px;
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 10px;
+}
+
+.billInput {
+    width: 95%;
+    height: 45px;
+    border: none;
+    margin: 10px 0 35px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    background: hsl(189, 41%, 97%) url("images/icon-dollar.svg") no-repeat 15px 50%;
+    font-size: 24px;
+    float: left;
+}
+
+.billInput:focus {
+    outline: none;
+    border:1px solid #07cc69;
+    margin: 9px 0 34px;
+    font-family: 'Space Mono', monospace;
+}
+
+.tipSelectLabel {
+    display: block;
+}
+
+.radio-block {
+    display: inline-block;
+    width: 30%;
+    margin-right: 9px;
+    margin-bottom: 10px;
+    height: 45px;
+}
+
+.tip-radios {
+    display: none;
+}
+
+.tipLabel {
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.radio-block:nth-child(3n + 2) {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.tipLabel:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+.radio-block input:checked ~ label {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tip-custom {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+.tip-custom-unselected {
+    background: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tip-custom-selected {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.tip-custom:hover {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.tip-custom:focus {
+    outline: none;
+    border:1px solid #07cc69;
+    background-color: white;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+
+.tipSelectBlock {
+    margin-bottom: 20px;
+}
+
+.People-Num {
+    width: 95%;
+    height: 45px;
+    border: none;
+    margin: 10px 0 35px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    background: hsl(189, 41%, 97%) url("images/icon-person.svg") no-repeat 15px 50%;
+    font-size: 24px;
+    float: left;
+}
+
+.People-Num:focus {
+    outline: none;
+    border:1px solid #07cc69;
+    margin: 9px 0 34px;
+    font-family: 'Space Mono', monospace;
+}
+
+.infoBlock {
+    position: relative;
+}
+
+.tipResult-block {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: white;
+    font-size: 15px;
+    margin: 0;
+}
+
+p {
+    color: hsl(186, 14%, 43%);
+    font-size: 13px;
+    margin: 0;
+}
+
+.result {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    float: right;
+    color: hsl(172, 67%, 45%)
+}
+
+.result-standart {
+    font-size: 42px;
+}
+
+.result-mini {
+    font-size: 38px;
+}
+
+input[type='button'] {
+    position: absolute;
+    bottom: 70px;
+    width: 310px;
+    box-sizing: border-box;
+    height: 45px;
+    border-radius: 5px;
+    background-color: hsl(172, 67%, 45%);
+    border: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+input[type='button']:hover {
+    background-color: hsl(185, 41%, 84%);
+}
+
+input[type='button']:active {
+    background-color: hsl(189, 41%, 97%);
+    
+}
