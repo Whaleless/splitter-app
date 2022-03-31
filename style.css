@@ -182,8 +182,13 @@ input:focus::placeholder {
 .People-Num:focus {
     outline: none;
     border:1px solid #07cc69;
-    margin: 9px 0 34px;
+    margin: 10px 0 34px;
     font-family: 'Space Mono', monospace;
+}
+
+.error-border {
+    border: 1px solid rgba(255, 0, 0, 0.76);
+    margin: 10px 0 34px;
 }
 
 .infoBlock {
@@ -247,4 +252,14 @@ input[type='button']:hover {
 input[type='button']:active {
     background-color: hsl(189, 41%, 97%);
     
+}
+
+.dis {
+    display: none;
+}
+
+.error {
+    color: rgba(255, 0, 0, 0.76);
+    float: right;
+    line-height: 23px;
 }

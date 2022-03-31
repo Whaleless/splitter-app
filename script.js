@@ -17,6 +17,10 @@ let resetButton = document.querySelector('.resetButton');
 let tipResult = document.querySelector('.tipResult');
 let totalResult = document.querySelector('.totalResult');
 
+//infoBlocks
+
+let errorText = document.querySelector('.error');
+
 for (let i = 0; i < 6; i++) {
     let radioButton = radioButtons[i];
     radioButton.addEventListener('change', function () {
@@ -71,6 +75,17 @@ billInput.addEventListener('change', function () {
 })
 
 peopleNum.addEventListener('change', function() {
+    if (peopleNum.value == '00' | peopleNum.value == '000') {
+        peopleNum.value = '';
+    }
+    if (peopleNum.value == '0') {
+        errorText.classList.remove('dis');
+        peopleNum.classList.add('error-border');
+    }
+    else {
+        errorText.classList.add('dis');
+        peopleNum.classList.remove('error-border');
+    }
     calcHelper();
 })
 
