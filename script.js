@@ -7,6 +7,7 @@ let customTip = document.querySelector('.tip-custom');
 //radios
 
 let radioButtons = document.querySelectorAll('.tip-radios');
+let radioDef = document.querySelector('.tip-0');
 
 //buttons
 
@@ -31,6 +32,10 @@ for (let i = 0; i < 6; i++) {
     customTip.addEventListener('change', function () {
         if (radioButton.checked) {
             radioButton.checked = false;
+        }
+
+        if (customTip.value == '') {
+            radioDef.checked = true;
         }
 
         if (!customTip.value == '') {
