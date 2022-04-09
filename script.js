@@ -57,6 +57,7 @@ for (let i = 0; i < 6; i++) {
 
     resetButton.addEventListener('click', function () {
         radioButton.checked = false;
+        radioDef.checked = true;
 
         customTip.value = '';
         customTip.classList.replace('tip-custom-selected', 'tip-custom-unselected');
