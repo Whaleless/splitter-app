@@ -145,6 +145,11 @@ let calc = function(tips) {
 
         }
 
+if (screen.width < 500) {
+    billInput.type = 'number';
+    peopleNum.type = 'number';
+}
+
 function setInputFilter(textbox, inputFilter) {
     ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
         textbox.addEventListener(event, function() {

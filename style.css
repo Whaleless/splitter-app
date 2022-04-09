@@ -197,7 +197,7 @@ input:focus::placeholder {
     margin-bottom: 40px;
 }
 
-.tipResult-block {
+.tip3000 {
     margin-top: 20px;
 
 }
@@ -230,7 +230,7 @@ p {
     font-size: 38px;
 }
 
-input[type='button'] {
+input[type='submit'] {
     box-sizing: border-box;
     width: 100%;
     height: 45px;
@@ -246,11 +246,11 @@ input[type='button'] {
     cursor: pointer;
 }
 
-input[type='button']:hover {
+input[type='submit']:hover {
     background-color: hsl(185, 41%, 84%);
 }
 
-input[type='button']:active {
+input[type='submit']:active {
     background-color: hsl(189, 41%, 97%);
     
 }
@@ -265,7 +265,7 @@ input[type='button']:active {
     line-height: 23px;
 }
 
-@media (max-width: 860px ) {
+@media (max-width: 860px) {
     img {
         top: -12%;
     }
@@ -274,9 +274,9 @@ input[type='button']:active {
         display: block;
         box-sizing: border-box;
         width: 100%;
-        height: 90%;
+        height: 105%;
         left: 0;
-        top: 40%;
+        top: 325px;
         margin-left: 0;
     }
 
@@ -285,12 +285,11 @@ input[type='button']:active {
     }
 
     .result-block {
-
         width: 100%;
         margin-top: 100px;
     }
 
-    input[type='button'] {
+    input[type='submit'] {
         position: static;
     }
 }
