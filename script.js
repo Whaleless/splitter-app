@@ -146,12 +146,9 @@ let calc = function(tips) {
         }
 
 if (screen.width < 500) {
-    billInput.type = 'number';
-    billInput.pattern = '[0-9]{5}';
-    peopleNum.type = 'number';
-    peopleNum.pattern = '[0-9]{5}';
-    customTip.type = 'number';
-    customTip.pattern = '^[0-9][0-9]?[/%]?$|^100[/%]?$|^$|^%$';
+    billInput.pattern = '\\d*';
+    peopleNum.pattern = '\\d*';
+    customTip.pattern = '\\d{3}';
 }
 
 function setInputFilter(textbox, inputFilter) {
