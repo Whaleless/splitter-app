@@ -13,12 +13,14 @@ img {
 .back {
     position: absolute;
     width: 100%;
+    min-width: 330px;
     height: 100%;
     background-color: hsl(185, 41%, 84%);
 }
 
 .main-block {
     width: 800px;
+    min-width: 330px;
     height: 400px;
     padding: 30px;
 
