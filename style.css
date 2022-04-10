@@ -312,3 +312,18 @@ input[type='submit']:active {
     }
 
 }
+
+@media (pointer:coarse){
+    input[type='submit']:hover {
+        background-color: hsl(172, 67%, 45%);
+    }
+
+    .tip-custom-unselected:hover {
+        background: hsl(189, 41%, 97%);
+        color: hsl(183, 100%, 15%);
+    }
+
+    .tip-custom-selected:hover {
+        background-color: hsl(172, 67%, 45%);
+    }
+}
