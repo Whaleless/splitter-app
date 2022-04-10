@@ -148,7 +148,7 @@ let calc = function(tips) {
 if (screen.width < 500) {
     billInput.pattern = '\\d*';
     peopleNum.pattern = '\\d*';
-    customTip.pattern = '\\d{3}';
+    customTip.pattern = '\\d*';
 }
 
 function setInputFilter(textbox, inputFilter) {
