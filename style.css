@@ -244,6 +244,8 @@ input[type='submit'] {
     color: hsl(183, 100%, 15%);
     transition-duration: 0.2s;
     cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-border-radius: 5px;
 }
 
 input[type='submit']:hover {
